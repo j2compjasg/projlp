@@ -1,49 +1,65 @@
+@media (min-width: 768px) {
+    body {
+        width: 80%;
+        margin: auto;
+    } 
+}
+
+footer {
+background-color: black;           
+}
+
+
+
 .video-responsive {
     height: 0;
     overflow: hidden;
     padding-bottom: 56.25%;
     padding-top: 30px;
     position: relative;
-    }
-    .video-responsive iframe, .video-responsive object, .video-responsive embed {
+}
+
+.video-responsive iframe, .video-responsive object, .video-responsive embed {
     height: 100%;
     left: 0;
     position: absolute;
     top: 0;
     width: 100%;
-    }
-    #foto {
+}
+#foto {
     height: 100px;
     width: auto;
     float: left;
     justify-content: left;
-    }
-    .explica {
+}
+.explica {
     font-family: 'Germania One', cursive; text-align:justify; 
     justify-content: center;
     align-items: center;
-    }
-    .btn {
+}
+
+.copyr {
+    font-family: 'Germania One', cursive; text-align:justify; 
+    justify-content: center;
+    align-items: center;
+    color: gold;
+}
+
+.btn {
     font-family: 'Germania One', cursive; }
-    h1{
+h1{
     font-family: 'Germania One', cursive;color : brown; text-align:center ; margin-top: 10px; margin-bottom: 10px; }
-    h2{
+h2{
     font-family: 'Germania One', cursive;color: brown; text-align:center ;}
-    h3{
+h3{
     font-family: 'Germania One', cursive;color: brown;      }
-    h4{
+h4{
     font-family: 'Germania One', cursive;color: brown;}
-    h5{
+h5{
     font-family: 'Germania One', cursive;color: brown;     }
-    p {
+p {
     font-family: 'Mate SC', serif;      }
-    li {
+li {
     font-family: 'Mate SC', serif;            }
-    .mb3 {
+.mb3 {
     font-family: 'Germania One', cursive;      }
-    @media (min-width: 768px) {
-    body {
-    width: 80%;
-    margin: auto;
-    } 
-    }
