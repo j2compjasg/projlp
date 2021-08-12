@@ -1,15 +1,35 @@
 @media (min-width: 768px) {
+    }
     body {
         width: 80%;
         margin: auto;
     } 
+    #foto {
+        height: 200px;
+        width: auto;
+        float: left;
+        justify-content: left;
+    }
+}
+
+header {
+
+    background-color: lightgoldenrodyellow;
+    align-items: center;
+    padding-top: auto;
+    padding-bottom: auto;
 }
 
 footer {
 background-color: black;           
 }
 
-
+#foto {
+    height: 100px;
+    width: auto;
+    float: left;
+    justify-content: center;
+}
 
 .video-responsive {
     height: 0;
@@ -26,12 +46,7 @@ background-color: black;
     top: 0;
     width: 100%;
 }
-#foto {
-    height: 100px;
-    width: auto;
-    float: left;
-    justify-content: left;
-}
+
 .explica {
     font-family: 'Germania One', cursive; text-align:justify; 
     justify-content: center;
@@ -48,7 +63,7 @@ background-color: black;
 .btn {
     font-family: 'Germania One', cursive; }
 h1{
-    font-family: 'Germania One', cursive;color : brown; text-align:center ; margin-top: 10px; margin-bottom: 10px; }
+    font-family: 'Germania One', cursive;color : brown; text-align:center ; margin-top: auto; margin-bottom: auto; }
 h2{
     font-family: 'Germania One', cursive;color: brown; text-align:center ;}
 h3{
