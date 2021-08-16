@@ -1,8 +1,10 @@
 @media (min-width: 768px) {
-    }
     body {
         width: 80%;
         margin: auto;
+        display :block; 
+        padding-bottom: 20px; 
+
     } 
     #foto {
         height: 200px;
@@ -13,8 +15,6 @@
 }
 
 header {
-
-    background-color: lightgoldenrodyellow;
     align-items: center;
     padding-top: auto;
     padding-bottom: auto;
@@ -46,8 +46,14 @@ background-color: black;
     top: 0;
     width: 100%;
 }
+main {
+    background-color: #ffda79;
+    padding-left: 10px;
+    padding-right: 10px;
+}
 
 .explica {
+    background-color: white;
     font-family: 'Germania One', cursive; text-align:justify; 
     justify-content: center;
     align-items: center;

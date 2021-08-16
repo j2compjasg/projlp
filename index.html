@@ -11,9 +11,10 @@
       <link href="https://fonts.googleapis.com/css2?family=Germania+One&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
       <script src="https://kit.fontawesome.com/e4ee4b9ebc.js" crossorigin="anonymous"></script>
-      <script src="js/validar.js"></script>
-      <!--Mi estilo personalizado a mi pinta-->
-      <link rel="stylesheet" href="css/estilo.css">
+<!--      <script src="js/validar.js"></script> OBSOLETO POR VALIDACION JQUERY-->
+
+<!--Mi estilo personalizado a mi pinta-->
+      <link rel="stylesheet" href="assets/css/estilo.css">
       <title>La Experiencia Cervecera</title>
    </head>
    <body>
@@ -21,14 +22,14 @@
          <div class="container d-block"> 
             <div class="row align-items-center">
             <div class="col md-2">
-               <img class="mx-auto d-block" src="img/helmut.png" id="foto" alt="helmut Scheu"></div>
+               <img class="mx-auto d-block" src="assets/img/helmut.png" id="foto" alt="helmut Scheu"></div>
             <div class="col-9">
                <h1>Gana la Experiencia Cervecera de Helmut Scheu</h1>
             </div>
             </div>
          </div> 
       </header>
-      <div class="container-fluid" style="display :block; background-color: #ffda79; padding-bottom: 20px; ">
+      <main>
          <hr>
          <div class="row">
             <div class="col-lg-8">
@@ -57,7 +58,7 @@
                <div class="row">
                   <div class="col-lg-4" >
                      <div class="card">
-                        <img src="img/lager.png" class="card-img-top" alt="Cerveza Lager">
+                        <img src="assets/img/lager.png" class="card-img-top" alt="Cerveza Lager">
                         <div class="card-body">
                            <h5 class="card-title">Lager</h5>
                            <p class="card-text">Cerveza rubia, suave y refrescante, dejando un exquisito amargo de boca.</p>
@@ -74,7 +75,7 @@
                   </div>
                   <div class="col-lg-4">
                      <div class="card">
-                        <img src="img/dormund.png" class="card-img-top" alt="Cerveza Dormundt">
+                        <img src="assets/img/dormund.png" class="card-img-top" alt="Cerveza Dormundt">
                         <div class="card-body">
                            <h5 class="card-title">Dormundt</h5>
                            <p class="card-text">Color dorado pálido, semi seca.  De menor amargor pero sabor intenso.</p>
@@ -91,7 +92,7 @@
                   </div>
                   <div class="col-lg-4">
                      <div class="card">
-                        <img src="img/Bock.png" class="card-img-top" alt="Cerveza Bock">
+                        <img src="assets/img/Bock.png" class="card-img-top" alt="Cerveza Bock">
                         <div class="card-body">
                            <h5 class="card-title">Bock</h5>
                            <p class="card-text">Conserva la pureza de sabores de malta, de cuerpo intenso y lúpulo ligero.  </p>
@@ -112,34 +113,36 @@
                <hr>
                <h2>Ingresa tu código Aquí</h2>
                <hr>
-               <div class="card">
+               <form id="form" class="needs-validation" >
+
                   <div class="card-body">
                      <p>Recuerda que en tus packs de 12 y de 24 encontrarás un código.  
                         <br>Con él te podrás registrar y estarás participando en el próximo sorteo
                      </p>
                      <div class="mb-3">
                         <label for="Codigo" class="form-label">Código</label>
-                        <input type="text" class="form-control" id="Codigo">
+                        <input type="text" class="form-control" id="Codigo" value = "" required= "">
                      </div>
                      <div class="mb-3">
                         <label for="Nombre" class="form-label">Nombre</label>
-                        <input type="text" class="form-control" id="Nombre">
+                        <input type="text" class="form-control" id="Nombre" value = "" required = "">
                      </div>
                      <div class="mb-3">
                         <label for="rut" class="form-label">RUT</label>
-                        <input type="text" class="form-control" id="rut" >
+                        <input type="text" class="form-control" id="rut" value="" required ="" >
                      </div>
                      <div class="mb-3">
                         <label for="email" class="form-label">Correo Electrónico</label>
-                        <input type="email" class="form-control" id="email" placeholder="nombre@dominio.com">
+                        <input type="email" class="form-control" id="email" placeholder="nombre@dominio.com" value="" required="" >
                      </div>
                      <div class="mb-3">
                         <label for="fono" class="form-label">Teléfono</label>
                         <input type="text" class="form-control" id="fono" >
                      </div>
-                     <button class="w-100 btn btn-primary btn-lg mt-2" type="button" onclick="validar()">Participar</button>
+                     <!--<button class="w-100 btn btn-primary btn-lg mt-2" type="button" onclick="validar()">Participar</button>-->
+                     <button class="w-100 btn btn-primary btn-lg mt-2" onclick="validacion();" >Participar</button>
                   </div>
-               </div>
+               </form>
             </div>
             <div class="row" style="margin-top: 50px;">
                <hr>
@@ -149,7 +152,7 @@
                   <div class="row g-2">
                      <div class="col-md-3">
                         <div class="card d-inline-flex p-3 text-center px-4">
-                           <div class="user-image"> <img src="img/hombre.png" alt="Testimonio Hombre" class="rounded-circle" width="80"> </div>
+                           <div class="user-image"> <img src="assets/img/hombre.png" alt="Testimonio Hombre" class="rounded-circle" width="80"> </div>
                            <div class="user-content">
                               <h5 class="mb-0">Antonio Zaldivar</h5>
                               <span>Ganador Enero 2021</span>
@@ -160,7 +163,7 @@
                      </div>
                      <div class="col-md-3">
                         <div class="card d-inline-flex p-3 text-center px-4">
-                           <div class="user-image"> <img src="img/mujer.png"  alt="Testimonio Mujer" class="rounded-circle" width="80"> </div>
+                           <div class="user-image"> <img src="assets/img/mujer.png"  alt="Testimonio Mujer" class="rounded-circle" width="80"> </div>
                            <div class="user-content">
                               <h5 class="mb-0">Marcela Muñoz</h5>
                               <span>Ganadora Marzo 2021</span>
@@ -171,7 +174,7 @@
                      </div>
                      <div class="col-md-3">
                         <div class="card d-inline-flex p-3 text-center px-4">
-                           <div class="user-image"> <img src="img/hombre.png"  alt="Testimonio Hombre" class="rounded-circle" width="80"> </div>
+                           <div class="user-image"> <img src="assets/img/hombre.png"  alt="Testimonio Hombre" class="rounded-circle" width="80"> </div>
                            <div class="user-content">
                               <h5 class="mb-0">Victor Cofré</h5>
                               <span>Ganador Mayo 2021</span>
@@ -182,7 +185,7 @@
                      </div>
                      <div class="col-md-3">
                         <div class="card d-inline-flex p-3 text-center px-4">
-                           <div class="user-image"> <img src="img/hombre.png"  alt="Testimonio Hombre" class="rounded-circle" width="80"> </div>
+                           <div class="user-image"> <img src="assets/img/hombre.png"  alt="Testimonio Hombre" class="rounded-circle" width="80"> </div>
                            <div class="user-content">
                               <h5 class="mb-0">Manuel Cuadra</h5>
                               <span>Ganador Julio 2021</span>
@@ -197,7 +200,7 @@
          </div>
          <div class="row">
          </div>
-      </div>
+      </main>
 
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
           <div class="col-md-4 d-flex align-items-center">
@@ -214,6 +217,14 @@
          </ul>
          </footer>
 
+
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/localization/messages_es.min.js" integrity="sha512-Ou4GV0BYVfilQlKiSHUNrsoL1nznkcZ0ljccGeWYSaK2CaVzof2XaZ5VEm5/yE/2hkzjxZngQHVwNUiIRE8yLw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     
+         <script type="text/javascript" src="assets/js/script.js"></script>
+     
+     
       <!-- Optional JavaScript; choose one of the two! -->
       <!-- Option 1: Bootstrap Bundle with Popper -->
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
