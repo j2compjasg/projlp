@@ -20,6 +20,10 @@ header {
     padding-bottom: auto;
 }
 
+form {
+    background-color: white;
+}
+
 footer {
 background-color: black;           
 }
