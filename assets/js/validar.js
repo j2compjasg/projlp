@@ -20,6 +20,7 @@ function validar(){
     }
     else if (codigo.length !==8) {
         alert("El Código debe ser de 8 dígitos")
+        return false;
     }
 
     else if (nombre.length>50){
